@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/colorselling/static/css/main.f8858395.css",
+    "main.js": "/colorselling/static/js/main.685c41c1.js",
+    "static/js/453.aa7277cc.chunk.js": "/colorselling/static/js/453.aa7277cc.chunk.js",
+    "static/media/image1.png": "/colorselling/static/media/image1.e54f0ccf9ed7c1a80cb0.png",
+    "static/media/green.png": "/colorselling/static/media/green.267a87c9e0cfa4f643c0.png",
+    "static/media/yellow.png": "/colorselling/static/media/yellow.43eaeeb76a0ec86d3b59.png",
+    "static/media/pink.png": "/colorselling/static/media/pink.d4b56bd852f88a27b1f9.png",
+    "static/media/orange.png": "/colorselling/static/media/orange.c0c008c768570c881681.png",
+    "static/media/topImage.png": "/colorselling/static/media/topImage.45a7db1bc4b05b43e765.png",
+    "index.html": "/colorselling/index.html",
+    "main.f8858395.css.map": "/colorselling/static/css/main.f8858395.css.map",
+    "main.685c41c1.js.map": "/colorselling/static/js/main.685c41c1.js.map",
+    "453.aa7277cc.chunk.js.map": "/colorselling/static/js/453.aa7277cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8858395.css",
+    "static/js/main.685c41c1.js"
+  ]
+}
