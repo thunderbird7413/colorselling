@@ -1,0 +1,37 @@
+.card-img-top{
+    height: 350px;
+    padding: 18px 15px;
+}
+.card{
+    border: none;
+    width: 22px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.fa-star{
+    font-size: 0.9rem;
+    color: gold;
+}
+.stars{
+    margin-left: 8px;
+}
+.card-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.card-text{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,15 @@
+.topImage{
+    height: 130px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.image-container{
+    background-image: url("topImage.png");
+    background-size:contain;
+    height: 90px;
+    background-repeat: none;
+    width: 60%;
+}
