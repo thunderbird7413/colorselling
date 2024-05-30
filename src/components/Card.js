@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+
 export default function Card({ imageUrl, name }) {
   return (
     <div>
@@ -18,11 +19,11 @@ export default function Card({ imageUrl, name }) {
           </h5>
           <p className="card-text">
             <div className="price">
-              Price
+              Price &rarr;
             </div>
             <div className="value">
-              <div className="first-value">100gm- Rs40</div>
-              <div className="second-value">200gm- Rs70</div>
+              <div className="first-value"><span>100gm- </span>Rs40</div>
+              <div className="second-value"><span>200gm- </span>Rs70</div>
             </div>
           </p>
           <div className="button">

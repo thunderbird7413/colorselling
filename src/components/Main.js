@@ -2,31 +2,35 @@ import React from "react";
 import { useState } from "react";
 import "./Main.css";
 import Card from "./Card.js";
+import imagey from "./yellow.png";
+import imageo from "./orange.png";
+import imagep from "./pink.png";
+import imageg from "./green.png";
 export default function Main() {
   const colors = [
     {
       id: 1,
       name: "Yellow Color",
       imageUrl:
-        "https://s3-alpha-sig.figma.com/img/3250/85e8/0a051c1f63d00de1a724d8a9ccaa7762?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fPk4z-CI~Pl1qEQKc-1djNt8Og7ha6D~pGt5GYLe8-vk2pk8-tjtz2FW8TIT7pWYLac5Cit-oaoIXaFROXsRqGfl6sFtxA8ob6BQxcfOz0YOCqrS~ZX2O-M6GjW8hFHxQ4dgruZJgKJJnxj40dpw4ShoHXLpCT4tCmZe1sotzN54nf4ZUMHBG663LHK41ME65GY5QBkzhqyRTiuQccVyTkS7oMsT2MDil7I-OMUm-k~dhWCYOerW~Ys7HMwTS9kSi01yQSt--c~SRzVRPe5ES9fgPrid4fDOxsnmEWZy52hHKUm6QbgpB5BTnw~hILMWZflAVPKsrNLhqh~r-ZKQlw__",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWZNtfWNyu84TwRj8szvKQAy_Dxa0HlZhtEg&s",
     },
     {
       id: 2,
       name: "Pink Color",
       imageUrl:
-        "https://s3-alpha-sig.figma.com/img/1213/820a/177e3db25b5fc5b732baf98375567535?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=glgVAxoxR3rfhFp4ARdPC7EmzMhlS6m2f8vjk6wwHzOulF5t1449Hv0AgSRHcPy1mo3fT98idEvSWghFoc7VIO5V165k1cm1XoyKiEXPHlNhQMubRrH79tUKE04-Dc7aLdTaCQ5Tn7UzOXsF79Nu~snUJhuakF7GpgCUoF4I5d7VjAVA0FbcHuAZRiaX968CdDIjO~Y2qSIorSqGil-36Un6eC72rpbe~tqoKWqGNcv5cek89gWxd0GJLoASAAHTT6miPvsDGZRCDAgSbmGIOCCvi5LH0YTsK-yKisVeSu69gXytsNBwexy4EkJpqxzZ53EqBevyt4MyEBlJnBSYIQ__",
+        "https://www.bigbasket.com/media/uploads/p/m/40295606-2_2-house-of-festivals-uv-shade-organic-herbal-holi-colourgulal-pink-no-harmful-chemicals.jpg",
     },
     {
       id: 3,
-      name: "Orange Color",
+      name: "Red Color",
       imageUrl:
-        "https://s3-alpha-sig.figma.com/img/a020/a5c9/5aed2e2a50d7f79db03fd19e53ada250?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qE3DoqJaBiQTfF6Q95UPxkAVFTR1840OrTiFQthMwrN~tsoe3CvMeG8p~zNX7OWDcuBh9hAi~4LNQkoUq0iEIirY2fG1iEXsKGq4oPn8RZs379vONDr-ZxeQFjb380OWldT3C9Z~SOsB9tpRH4rY~PaOdBRktz-j5Q0LgZDOBVZjunjTVEosRCqKF3ICGTLaoT9MODuJ60FjDWV5NFkf8oHR~3B2i16wvGHsBzzvisKEG7xcv178ecwg3-Tbi~UeqI2wCP553jdLyZqPhKVXpbM93IDxaFwltIOlq298WdK0HzDeo9kO2D91e~XbaVjuRtFHYQ0coVGZSYy2yhZnkw__",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIw4V3Um5aGcJ8cNdyEnye41-V4zi8SNRJOg&s",
     },
     {
       id: 4,
-      name: "Green Color",
+      name: "Blue Color",
       imageUrl:
-        "https://s3-alpha-sig.figma.com/img/3250/85e8/0a051c1f63d00de1a724d8a9ccaa7762?Expires=1711929600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fPk4z-CI~Pl1qEQKc-1djNt8Og7ha6D~pGt5GYLe8-vk2pk8-tjtz2FW8TIT7pWYLac5Cit-oaoIXaFROXsRqGfl6sFtxA8ob6BQxcfOz0YOCqrS~ZX2O-M6GjW8hFHxQ4dgruZJgKJJnxj40dpw4ShoHXLpCT4tCmZe1sotzN54nf4ZUMHBG663LHK41ME65GY5QBkzhqyRTiuQccVyTkS7oMsT2MDil7I-OMUm-k~dhWCYOerW~Ys7HMwTS9kSi01yQSt--c~SRzVRPe5ES9fgPrid4fDOxsnmEWZy52hHKUm6QbgpB5BTnw~hILMWZflAVPKsrNLhqh~r-ZKQlw__",
+        "https://www.bigbasket.com/media/uploads/p/xl/40295614-2_2-house-of-festivals-glitter-organic-herbal-holi-colourgulal-blue-no-harmful-chemicals.jpg",
     },
   ];
   // State to hold the selected color
@@ -197,30 +201,13 @@ export default function Main() {
           {/* Render selected color detail card if any, otherwise render all color detail cards */}
           {selectedColorDetails ? 
           (<Card key={ selectedColorDetails.name} name={ selectedColorDetails.name} imageUrl={ selectedColorDetails.imageUrl} />)
-          // (
-          //   <div
-          //     style={{
-          //       border: "1px solid black",
-          //       padding: "10px",
-          //       marginTop: "20px",
-          //     }}
-          //   >
-          //     <h2>{selectedColorDetails}</h2>
-          //     <p>
-          //       {colors.find((color) => color.name === selectedColor).details}
-          //     </p>
-          //   </div>) 
+
           : (
             colors.map((item) => (
               <Card key={ item.name} name={ item.name} imageUrl={ item.imageUrl} />
             ))
           )}
-          {/* {selectedColor ?   (<Card key={ selectedColorDetails.name} name={ selectedColorDetails.name} imageUrl={ selectedColorDetails.imageUrl} />) :
-          colors.map(( selectedColorDetails) => {
-            return (
-              <Card key={ selectedColorDetails.name} name={ selectedColorDetails.name} imageUrl={ selectedColorDetails.imageUrl} />
-            );
-          })} */}
+
         </div>
       </div>
     </div>
